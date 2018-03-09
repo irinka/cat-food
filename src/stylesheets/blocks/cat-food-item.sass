@@ -1,0 +1,113 @@
+.cat-food-item
+  position: relative
+  width: 320px
+  height: 100%
+  border-radius: 12px
+  cursor: pointer
+
+  &.cat-food-item_selected
+    .cat-food-item__weight
+      background-color: #D91667
+    .cat-food-item-bg
+      color: #D91667
+    .cat-food-item__desc_selected
+      display: block
+    .cat-food-item__desc_default, .cat-food-item__desc_disabled
+      display: none
+
+  &.cat-food-item_disabled
+    cursor: not-allowed
+    .cat-food-item__mark, .cat-food-item__title,
+    .cat-food-item__taste, .cat-food-item__info-item
+      color: #B3B3B3
+    .cat-food-item__weight
+      background-color: #B3B3B3
+    .cat-food-item-bg
+      color: #B3B3B3
+      #photo
+        opacity: 0.5
+    .cat-food-item__desc_disabled
+      display: block
+    .cat-food-item__desc_default, .cat-food-item__desc_selected
+      display: none
+
+  &:not(.cat-food-item_disabled):not(.cat-food-item_not-hover)
+    .cat-food-item__wrapper
+      &:hover
+        .cat-food-item__weight
+          background-color: #2ea8e6
+        .cat-food-item-bg
+          color: #2ea8e6
+
+.cat-food-item__wrapper
+  position: relative
+  min-height: 482px
+
+.cat-food-item__inner
+  position: relative
+  box-sizing: border-box
+  padding: 24px 50px 20px
+  position: relative
+  min-height: 482px
+  z-index: 1
+  height: 100%
+
+.cat-food-item__mark
+  font-size: 16px
+  color: #666666
+  letter-spacing: 0
+  margin-bottom: 9px
+
+.cat-food-item__title
+  font-weight: bold
+  font-size: 48px
+  color: #000000
+  line-height: 1.2
+
+.cat-food-item__taste
+  font-weight: bold
+  font-size: 24px
+  color: #000000
+
+.cat-food-item__info
+  margin-top: 15px
+
+.cat-food-item__info-item
+  font-size: 14px
+  line-height: 1.2
+  color: #666666
+
+.cat-food-item__info-item-count
+  display: inline-block
+  font-weight: bold
+
+.cat-food-item__weight
+  padding: 10px
+  box-sizing: border-box
+  text-align: center
+  position: absolute
+  bottom: 16px
+  right: 14px
+  width: 80px
+  height: 80px
+  border-radius: 100%
+  background-color: #2ea8e6
+  font-size: 42px
+  color: #ffffff
+  transition: all .2s linear
+
+.cat-food-item__weight-unit
+  font-size: 20px
+
+.cat-food-item__desc
+  margin-top: 15px
+  text-align: center
+  font-size: 13px
+  color: #ffffff
+  &_default
+    display: block
+  &_selected
+    display: none
+  &_disabled
+    display: none
+    color: #FFFF66

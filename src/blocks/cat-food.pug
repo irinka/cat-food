@@ -1,0 +1,70 @@
+.cat-food
+  h1.cat-food__title Ты сегодня покормил кота?
+  ul.cat-food__list
+    li.cat-food__list-item
+      .cat-food-item.js-cat-food-item
+        .cat-food-item__wrapper.js-cat-food-wrapper
+          include ./cat-food-item-bg.pug
+          .cat-food-item__inner
+            .cat-food-item__mark Сказочное заморское яство
+            .cat-food-item__title Нямушка
+            .cat-food-item__taste с фуа-гра
+            .cat-food-item__info
+              .cat-food-item__info-item
+                .cat-food-item__info-item-count 10
+                |   порций
+              .cat-food-item__info-item мышь в подарок
+            .cat-food-item__weight 0,5
+              .cat-food-item__weight-unit кг
+        .cat-food-item__desc.cat-food-item__desc_default Чего сидишь? Порадуй котэ,
+          = " "
+          a.cat-food-item__link.js-cat-food-link(href="#") купи.
+        .cat-food-item__desc.cat-food-item__desc_disabled Печалька, с фуа-гра закончилсь.
+        .cat-food-item__desc.cat-food-item__desc_selected Печень утки разварная с артишоками.
+
+    li.cat-food__list-item
+      .cat-food-item.js-cat-food-item
+        .cat-food-item__wrapper.js-cat-food-wrapper
+          include ./cat-food-item-bg.pug
+          .cat-food-item__inner
+            .cat-food-item__mark Сказочное заморское яство
+            .cat-food-item__title Нямушка
+            .cat-food-item__taste с рыбой
+            .cat-food-item__info
+              .cat-food-item__info-item
+                .cat-food-item__info-item-count 40
+                |   порций
+              .cat-food-item__info-item
+                .cat-food-item__info-item-count 2
+                |   мыши в подарок
+            .cat-food-item__weight 2
+              .cat-food-item__weight-unit кг
+        .cat-food-item__desc.cat-food-item__desc_default Чего сидишь? Порадуй котэ,
+          = " "
+          a.cat-food-item__link.js-cat-food-link(href="#") купи.
+        .cat-food-item__desc.cat-food-item__desc_disabled Печалька, с рыбой закончились.
+        .cat-food-item__desc.cat-food-item__desc_selected Головы щучьи с чесноком да свежайшая сёмгушка.
+
+    li.cat-food__list-item
+      .cat-food-item.js-cat-food-item.cat-food-item_disabled
+        .cat-food-item__wrapper.js-cat-food-wrapper
+          include ./cat-food-item-bg.pug
+          .cat-food-item__inner
+            .cat-food-item__mark Сказочное заморское яство
+            .cat-food-item__title Нямушка
+            .cat-food-item__taste с курой
+            .cat-food-item__info
+              .cat-food-item__info-item
+                .cat-food-item__info-item-count 100
+                |   порций
+                .cat-food-item__info-item
+                  .cat-food-item__info-item-count 5
+                  |   мышей в подарок
+              .cat-food-item__info-item заказчик доволен
+            .cat-food-item__weight 5
+              .cat-food-item__weight-unit кг
+        .cat-food-item__desc.cat-food-item__desc_default Чего сидишь? Порадуй котэ,
+          = " "
+          a.cat-food-item__link.js-cat-food-link(href="#") купи.
+        .cat-food-item__desc.cat-food-item__desc_disabled Печалька, с курой закончились.
+        .cat-food-item__desc.cat-food-item__desc_selected Филе из цыплят с трюфелями в бульоне.
