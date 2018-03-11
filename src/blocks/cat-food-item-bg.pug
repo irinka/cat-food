@@ -2,14 +2,12 @@ svg.cat-food-item-bg(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www
   defs
     path#path-1(d='M42,2 h263 a12,12 0 0 1 12,12 v454 a12,12 0 0 1 -12,12 h-290 a12,12 0 0 1 -12,-12 v-430 z')
   g(stroke='none', stroke-width='1', fill='none', fill-rule='evenodd')
+    mask#mask-2(fill='white')
+      use(xlink:href='#path-1')
     g
-      g#back
-        mask#mask-2(fill='white')
-          use(xlink:href='#path-1')
-        g
-          use(fill='#F2F2F2', fill-rule='evenodd', xlink:href='#path-1')
-        g#photo(mask='url(#mask-2)')
-          g(transform='translate(0, 186)')
-            image(x='0', y='0', width='318', height='318', xlink:href=require('../images/photo.png'))
-        g
-          path(stroke='currentColor', stroke-width='4', d='M42,2 h263 a12,12 0 0 1 12,12 v453 a12,12 0 0 1 -12,12 h-290 a12,12 0 0 1 -12,-12 v-427 z')
+      use(fill='#F2F2F2', fill-rule='evenodd', xlink:href='#path-1')
+    g#photo(mask='url(#mask-2)')
+      g(transform='translate(0, 186)')
+        image(x='0', y='0', width='318', height='318', xlink:href=require('../images/photo.png'))
+    g
+      path(stroke='currentColor', stroke-width='4', d='M42,2 h263 a12,12 0 0 1 12,12 v453 a12,12 0 0 1 -12,12 h-290 a12,12 0 0 1 -12,-12 v-427 z')
