@@ -1,6 +1,6 @@
 .cat-food
   align-self: center
-  padding: 40px 80px
+  padding: 40px 0
   box-sizing: border-box
   margin: 0 auto
 
@@ -23,26 +23,26 @@
   &:last-child
     margin-right: 0
 
-@media (min-width: 768px) and (max-width: 1279px)
+@media (min-width: 721px) and (max-width: 1200px)
   .cat-food
-    padding: 40px 20px
+    padding: 40px 0
 
   .cat-food__list
     max-width: 768px
 
-@media (min-width: 340px) and (max-width: 767px)
-  .cat-food
-    padding: 20px 10px
-
-  .cat-food__list
-    max-width: 340px
-
   .cat-food__list-item
-    margin-right: 0
+    display: flex
+    justify-content: center
+    &:first-child
+      margin-right: 0
+      flex-basis: 100%
 
-@media (max-width: 339px)
+@media (max-width: 720px)
   .cat-food
     padding: 20px 0
+
+  .cat-food__list
+    max-width: 320px
 
   .cat-food__list-item
     margin-right: 0
