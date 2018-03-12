@@ -3,16 +3,13 @@
   width: 320px
   height: 100%
   border-radius: 12px
-  cursor: pointer
 
   &.cat-food-item_selected
     .cat-food-item__weight
       background-color: #D91667
-    .cat-food-item-bg
-      color: #D91667
-    .cat-food-item__desc_selected
+    .cat-food-item__desc_selected, .cat-food-item__mark_selected
       display: block
-    .cat-food-item__desc_default, .cat-food-item__desc_disabled
+    .cat-food-item__desc_default, .cat-food-item__desc_disabled, .cat-food-item__mark_default
       display: none
 
   &.cat-food-item_disabled
@@ -24,7 +21,7 @@
       background-color: #B3B3B3
     .cat-food-item-bg
       color: #B3B3B3
-      #photo
+      .photo
         opacity: 0.5
     .cat-food-item__desc_disabled
       display: block
@@ -39,9 +36,18 @@
         .cat-food-item-bg
           color: #2ea8e6
 
+  &.cat-food-item_selected:not(.cat-food-item_disabled):not(.cat-food-item_not-hover)
+    .cat-food-item__wrapper
+      &:hover
+        .cat-food-item__weight
+          background-color: #e52e7a
+        .cat-food-item-bg
+          color: #e52e7a
+
 .cat-food-item__wrapper
   position: relative
   min-height: 482px
+  cursor: pointer
 
 .cat-food-item__inner
   position: relative
@@ -57,6 +63,9 @@
   color: #666666
   letter-spacing: 0
   margin-bottom: 6px
+  &_selected
+    display: none
+    color: #E62E7A
 
 .cat-food-item__title
   margin-left: -2px
@@ -92,7 +101,7 @@
   width: 80px
   height: 80px
   border-radius: 100%
-  background-color: #2ea8e6
+  background-color: #169fd9
   font-size: 42px
   color: #ffffff
   transition: all .2s linear
