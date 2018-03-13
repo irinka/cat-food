@@ -1,5 +1,7 @@
 import './stylesheets/base/reset.sass';
+import './stylesheets/base/variables.sass';
 import './stylesheets/base/base.sass';
+
 import './stylesheets/blocks/cat-food.sass';
 import './stylesheets/blocks/cat-food-item.sass';
 import './stylesheets/blocks/cat-food-item-bg.sass';

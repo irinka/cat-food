@@ -6,7 +6,7 @@
 
   &.cat-food-item_selected
     .cat-food-item__weight
-      background-color: #D91667
+      background-color: $selected-color
     .cat-food-item__desc_selected, .cat-food-item__mark_selected
       display: block
     .cat-food-item__desc_default, .cat-food-item__desc_disabled, .cat-food-item__mark_default
@@ -16,11 +16,11 @@
     cursor: not-allowed
     .cat-food-item__mark, .cat-food-item__title,
     .cat-food-item__taste, .cat-food-item__info-item
-      color: #B3B3B3
+      color: $disabled-color
     .cat-food-item__weight
-      background-color: #B3B3B3
+      background-color: $disabled-color
     .cat-food-item-bg
-      color: #B3B3B3
+      color: $disabled-color
       .photo
         opacity: 0.5
     .cat-food-item__desc_disabled
@@ -32,17 +32,17 @@
     .cat-food-item__wrapper
       &:hover
         .cat-food-item__weight
-          background-color: #2ea8e6
+          background-color: $hover-color
         .cat-food-item-bg
-          color: #2ea8e6
+          color: $hover-color
 
   &.cat-food-item_selected:not(.cat-food-item_disabled):not(.cat-food-item_not-hover)
     .cat-food-item__wrapper
       &:hover
         .cat-food-item__weight
-          background-color: #e52e7a
+          background-color: $selected-hover-color
         .cat-food-item-bg
-          color: #e52e7a
+          color: $selected-hover-color
 
 .cat-food-item__wrapper
   position: relative
@@ -101,7 +101,7 @@
   width: 80px
   height: 80px
   border-radius: 100%
-  background-color: #169fd9
+  background-color: $default-color
   font-size: 42px
   color: #ffffff
   transition: all .2s linear
