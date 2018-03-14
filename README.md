@@ -13,5 +13,5 @@ git clone https://github.com/irinka/cat-food cat-food
 cd cat-food && yarn
 ```
 ```
-yarn start
+yarn dev
 ```
